@@ -88,7 +88,7 @@ class App extends Component {
     const { input, user } = this.state;
     const { calculateFaceLocation } = this;
     this.setState({ imageUrl: input });
-    fetch("http://localhost:3100/imageurl", {
+    fetch("https://obscure-ocean-76689.herokuapp.com/imageurl", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -98,7 +98,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch("http://localhost:3100/image", {
+          fetch("https://obscure-ocean-76689.herokuapp.com/image", {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
