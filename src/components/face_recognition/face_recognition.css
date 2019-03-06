@@ -1,0 +1,12 @@
+.img {
+  border: 2px solid #fb1;
+}
+
+.bounding-box {
+  position: absolute;
+  box-shadow: 0 0 0 3px #4ebeff inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
