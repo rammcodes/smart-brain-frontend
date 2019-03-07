@@ -11,7 +11,7 @@ import "./App.css";
 const initialState = {
   input: "",
   imageUrl: "",
-  box: {},
+  box: false,
   route: "signIn",
   isSignedIn: false,
   user: {
